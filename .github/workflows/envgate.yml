@@ -1,0 +1,8 @@
+name: envgate
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - run: echo gated
